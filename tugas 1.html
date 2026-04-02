@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+
+     <style>
+        .hero{
+            background-image: url("sawah.jfif");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.5);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay d-flex justify-content-center align-items-center text-center">
+           <div class="text-white">
+            <h1 class="display-5 fw-bold">Sistem Manajemen Siswa</h1>
+            <p class="fs-4">Kelola Data Kehadiran,Profil,dan status akademik siswa lebih mudah dan efisien.</p>
+            <button class="btn btn-primary btn-lg">Lihat Tabel</button>
+            <button class="btn btn-outline-light btn-lg">Panduan</button>
+           </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 align="center">Tabel Data Siswa</h2>
+        <p align="center">Contoh Penggunaan Tabel Gambar dan Button Bootstrap</p>
+
+
+          <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr class="table-dark" align="center">
+                    <th>No</th>
+                    <th>Foto</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>1</td>
+                    <td><img src="fotobulet2.jfif" class="rounded-circle img-fluid" style="max-width:100px;"></td>
+                    <td>Salsa</td>
+                    <td>X PPLG 1</td>
+                    <td><span class="badge bg-success">Aktif</span></td>
+                    <td><span class="badge bg-warning">Edit</span> <span class="badge bg-danger">Hapus</span></td>
+                </tr>
+                <tr align="center">
+                    <td>2</td>
+                    <td><img src="fotokerja.jfif" class="rounded-circle img-fluid" style="max-width: 70px;"></td>
+                    <td>Andi</td>
+                    <td>X PPLG 2</td>
+                    <td><span class="badge bg-warning">Izin</span></td>
+                    <td><span class="badge bg-warning">Edit</span> <span class="badge bg-danger">Hapus</span></td>
+                </tr>
+                <tr align="center">
+                    <td>3</td>
+                    <td><img src="fotobulet.jfif" class="rounded-circle img-fluid" style="max-width: 70px;"></td>
+                    <td>Bagas</td>
+                    <td>X PPLG 3</td>
+                    <td><span class="badge bg-danger">Tidak hadir</span></td>
+                    <td><span class="badge bg-warning">Edit</span> <span class="badge bg-danger">Hapus</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <div align="center">
+        <button class="btn btn-primary">Tambah Data</button>
+        <button class="btn btn-outline-secondary">Ekpor Excel</button>
+        </div>
+</body>
+</html>
